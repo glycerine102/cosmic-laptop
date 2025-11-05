@@ -21,14 +21,11 @@ modules:
     repos:
       copr:
         - atim/starship
+
     install:
       packages:
+        - fastfetch
         - micro
-    remove:
-      packages:
-        - firefox
-        - firefox-langpacks
-        - thunderbird
 
     group-install:
       with-optional: true
@@ -36,14 +33,28 @@ modules:
         - cosmic-desktop
         - cosmic-desktop-apps
 
+    remove:
+      packages:
+        - firefox
+        - firefox-langpacks
+        - thunderbird
+
   - type: default-flatpaks
     configurations:
       - notify: true
         scope: system
         install:
+          - com.bitwarden.desktop
           - com.brave.Browser
+          - com.github.tchx84.Flatseal
+          - com.mattermost.Desktop
+          - com.spotify.Client
           - dev.edfloreshz.CosmicTweaks
-      - scope: user
+          - io.kopia.KopiaUI
+          - net.cozic.joplin_desktop
+          - org.fedoraproject.MediaWriter
+          - org.localsend.localsend_app
+          - us.zoom.Zoom
 
   - type: signing
 
