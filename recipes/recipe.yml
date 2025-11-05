@@ -60,6 +60,13 @@ modules:
           - org.localsend.localsend_app
           - us.zoom.Zoom
 
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode
+        - JetBrainsMono
+        - SourceCodePro
+
   - type: signing
 
   - type: brew
