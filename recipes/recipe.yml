@@ -24,8 +24,12 @@ modules:
 
     install:
       packages:
+        - alacritty
+        - git-filter-repo
         - fastfetch
+        - mbuffer
         - micro
+        - pv
 
     group-install:
       with-optional: true
