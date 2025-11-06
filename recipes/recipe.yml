@@ -57,15 +57,7 @@ modules:
 
   - from-file: flatpaks.yml
   - from-file: fonts.yml
-
-  - type: script
-    snippets: []
-    scripts:
-      - manage_files.sh
+  - from-file: brew.yml
+  - from-file: script.yml
 
   - type: signing
-
-  - type: brew
-    nofile-limits: true
-    brew-analytics: false
-    auto-upgrade: false
