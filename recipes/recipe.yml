@@ -55,26 +55,7 @@ modules:
         - firefox-langpacks
         - thunderbird
 
-  - type: default-flatpaks
-    configurations:
-      - scope: system
-        notify: true
-        repo:
-          title: Flathub (system)
-        install:
-          - com.bitwarden.desktop
-          - com.brave.Browser
-          - com.github.tchx84.Flatseal
-          - com.mattermost.Desktop
-          - com.spotify.Client
-          - dev.edfloreshz.CosmicTweaks
-          - io.kopia.KopiaUI
-          - net.cozic.joplin_desktop
-          - org.fedoraproject.MediaWriter
-          - org.gnome.Loupe
-          - org.localsend.localsend_app
-          - us.zoom.Zoom
-
+  - from-file: flatpaks.yml
   - from-file: fonts.yml
 
   - type: script
