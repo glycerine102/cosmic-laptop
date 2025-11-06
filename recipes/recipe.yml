@@ -52,8 +52,10 @@ modules:
 
   - type: default-flatpaks
     configurations:
-      - notify: true
-        scope: system
+      - scope: system
+        notify: true
+        repo:
+          title: Flathub (system)
         install:
           - com.bitwarden.desktop
           - com.brave.Browser
@@ -64,6 +66,7 @@ modules:
           - io.kopia.KopiaUI
           - net.cozic.joplin_desktop
           - org.fedoraproject.MediaWriter
+          - org.gnome.Loupe
           - org.localsend.localsend_app
           - us.zoom.Zoom
 
