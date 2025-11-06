@@ -21,6 +21,7 @@ modules:
     repos:
       copr:
         - atim/starship
+        - jsbillings/netbird
 
     install:
       packages:
@@ -30,6 +31,8 @@ modules:
         - git-filter-repo
         - mbuffer
         - micro
+        - netbird-client
+        - netbird-ui
         - pv
 
     group-install:
