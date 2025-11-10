@@ -25,7 +25,6 @@ modules:
         - https://packages.microsoft.com/yumrepos/vscode/config.repo
       keys:
         - https://packages.microsoft.com/keys/microsoft.asc
-        - https://pkgs.netbird.io/yum/repodata/repomd.xml.key
 
     install:
       packages:
