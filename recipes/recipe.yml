@@ -63,5 +63,6 @@ modules:
   - from-file: fonts.yml
   - from-file: brew.yml
   - from-file: script.yml
+  - from-file: systemd.yml
 
   - type: signing
