@@ -38,6 +38,7 @@ modules:
         - fprintd-pam
         - fish
         - git-filter-repo
+        - libappindicator-gtk3
         - mbuffer
         - micro
         - netbird-client
