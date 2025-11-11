@@ -20,3 +20,24 @@ modules:
 - from-file: common/script.yml
 - from-file: common/systemd.yml
 - from-file: common/signing.yml
+
+- type: dnf
+  install:
+    packages:
+    - https://github.com/block/goose/releases/download/v1.12.1/Goose-1.12.1-1.x86_64.rpm
+
+  group-install:
+    with-optional: true
+    packages:
+    - cosmic-desktop
+    - cosmic-desktop-apps
+
+- type: default-flatpaks
+  configurations:
+  - scope: system
+    notify: true
+    repo:
+      title: Flathub (system)
+    install:
+    - dev.edfloreshz.CosmicTweaks
+    - org.gnome.Loupe
