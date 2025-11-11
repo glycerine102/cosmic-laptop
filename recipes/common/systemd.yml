@@ -1,0 +1,13 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+
+modules:
+- type: systemd
+  system:
+    enabled:
+    - netbird.service
+    disabled:
+    - flatpak-system-update.timer
+  user:
+    disabled:
+    - flatpak-user-update.timer

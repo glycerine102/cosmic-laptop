@@ -12,12 +12,11 @@ image-version: 43-20251110
 
 # module configuration, executed in order
 modules:
-- from-file: files.yml
-- from-file: dnf.yml
-- from-file: brew.yml
-- from-file: flatpaks.yml
-- from-file: fonts.yml
-- from-file: script.yml
-- from-file: systemd.yml
-
-- type: signing
+- from-file: common/files.yml
+- from-file: common/dnf.yml
+- from-file: common/brew.yml
+- from-file: common/flatpaks.yml
+- from-file: common/fonts.yml
+- from-file: common/script.yml
+- from-file: common/systemd.yml
+- from-file: common/signing.yml
