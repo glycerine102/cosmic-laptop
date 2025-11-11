@@ -1,0 +1,44 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+
+modules:
+- type: dnf
+  repos:
+    copr:
+    - jsbillings/netbird
+    files:
+    - https://packages.microsoft.com/yumrepos/vscode/config.repo
+    keys:
+    - https://packages.microsoft.com/keys/microsoft.asc
+
+  install:
+    packages:
+    - https://github.com/block/goose/releases/download/v1.12.1/Goose-1.12.1-1.x86_64.rpm
+    - alacritty
+    - chezmoi
+    - code
+    - fastfetch
+    - fprintd
+    - fprintd-pam
+    - fish
+    - git-filter-repo
+    - libappindicator-gtk3
+    - mbuffer
+    - micro
+    - netbird-client
+    - netbird-ui
+    - numix-icon-theme-circle
+    - pv
+    - rbw
+
+  group-install:
+    with-optional: true
+    packages:
+    - cosmic-desktop
+    - cosmic-desktop-apps
+
+  remove:
+    packages:
+    - firefox
+    - firefox-langpacks
+    - thunderbird
