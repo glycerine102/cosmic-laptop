@@ -12,11 +12,7 @@ image-version: 43-20251110
 
 # module configuration, executed in order
 modules:
-  - type: files
-    files:
-      - source: rootfs
-        destination: /
-
+  - from-file: files.yml
   - from-file: dnf.yml
   - from-file: brew.yml
   - from-file: flatpaks.yml
