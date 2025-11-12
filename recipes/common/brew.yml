@@ -5,4 +5,5 @@ modules:
 - type: brew
   nofile-limits: true
   brew-analytics: false
+  auto-update: false
   auto-upgrade: false
