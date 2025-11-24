@@ -5,5 +5,5 @@ modules:
 - type: script
   snippets: []
   scripts:
-  - install_packages.sh
+  - install_ludusavi.sh
   - manage_files.sh
