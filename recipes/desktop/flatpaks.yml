@@ -1,0 +1,18 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+
+modules:
+- type: default-flatpaks
+  configurations:
+  - scope: system
+    notify: true
+    repo:
+      title: Flathub (system)
+    install:
+    - com.github.PintaProject.Pinta
+    - com.github.mtkennerly.ludusavi
+    - com.usebottles.bottles
+    - org.kde.gwenview
+    - org.kde.haruna
+    - org.kde.kleopatra
+    - org.kde.okular
