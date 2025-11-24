@@ -7,8 +7,8 @@ name: plasma-desktop
 description: Customized Fedora KDE Atomic
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/kinoite-main
-image-version: 43-20251110
+base-image: ghcr.io/blue-build/base-images/fedora-kinoite
+image-version: 20251123-43
 
 # module configuration, executed in order
 modules:
