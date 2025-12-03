@@ -26,6 +26,7 @@ jobs:
         recipe:
           # !! Add your recipes here
           - cosmic.yml
+          - kinoite.yml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image
