@@ -1,0 +1,17 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+
+modules:
+- type: dnf
+
+  install:
+    packages:
+    - tlp
+    - tlp-rdw
+    - https://github.com/block/goose/releases/download/v1.12.1/Goose-1.12.1-1.x86_64.rpm
+
+  group-install:
+    with-optional: true
+    packages:
+    - cosmic-desktop
+    - cosmic-desktop-apps
