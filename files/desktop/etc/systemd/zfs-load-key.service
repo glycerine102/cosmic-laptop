@@ -1,0 +1,11 @@
+[Unit]
+Description=Load ZFS Encryption Keys and Mount Datasets
+After=network.target graphical.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/mount-zfs-encrypted-dir
+RemainAfterExit=true
+
+[Install]
+WantedBy=default.target

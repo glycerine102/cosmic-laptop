@@ -1,0 +1,15 @@
+#!/bin/bash
+set -eu
+
+ENCRYPTED_DATASET="storage/secrets"
+
+if [ "$(zfs get keystatus "${ENCRYPTED_DATASET}" -Ho value)" != "available" ]; then
+  zfs load-key "${ENCRYPTED_DATASET}"
+fi
+
+zfs list -rHo name,keystatus,mounted "${ENCRYPTED_DATASET}" | \
+while IFS=$'\t' read -r NAME KEYSTATUS MOUNTED; do
+    if [ "${MOUNTED}" != "yes" ] && [ "${KEYSTATUS}" == "available" ]; then
+        zfs mount "${NAME}" || true
+    fi
+done
