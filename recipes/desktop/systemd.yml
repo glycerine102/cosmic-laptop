@@ -1,0 +1,11 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+
+modules:
+- type: systemd
+  system:
+    enabled:
+    - lactd.service
+    - sshd.service
+    - zfs-load-key.service
+    - zfs-scrub-monthly@storage.timer
