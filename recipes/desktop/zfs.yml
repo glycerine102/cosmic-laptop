@@ -5,3 +5,4 @@ modules:
 - type: script
   scripts:
   - install_zfs.sh
+  - install_sanoid.sh
