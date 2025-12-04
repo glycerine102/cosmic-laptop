@@ -5,6 +5,7 @@ modules:
 - type: systemd
   system:
     enabled:
+    - input-remapper.service
     - lactd.service
     - sshd.service
     - zfs-load-key.service
