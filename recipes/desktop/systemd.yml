@@ -7,6 +7,7 @@ modules:
     enabled:
     - input-remapper.service
     - lactd.service
+    - sanoid.timer
     - sshd.service
-    - zfs-load-key.service
+    - zfs-load-encrypted.service
     - zfs-scrub-monthly@storage.timer

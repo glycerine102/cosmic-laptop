@@ -93,3 +93,4 @@ systemctl disable akmods-keygen@akmods-keygen.service
 systemctl mask akmods-keygen@akmods-keygen.service
 systemctl disable akmods-keygen.target
 systemctl mask akmods-keygen.target
+rm /usr/lib/systemd/system/zfs-load-key.service
